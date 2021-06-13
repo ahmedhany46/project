@@ -1,0 +1,54 @@
+div.gallery {
+    margin-bottom: 40px;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: 120px;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+.responsive {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.responsive > div {
+    width: calc((100% - 160px) / 4);
+}
+
+@media screen and (max-width: 1140px) {
+    .responsive {
+        width: 920px
+    }
+}
+
+@media screen and (max-width: 920px) {
+    .responsive {
+        width: 100%
+    }
+
+    .responsive > div {
+        width: calc((100% - 120px) / 2);
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .responsive > div {
+        width: calc(100% - 200px);
+    }
+}

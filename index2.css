@@ -1,0 +1,275 @@
+.awards {
+    flex-shrink: 0;
+    position: relative;
+    background: url('awards.jpg') 0 50% no-repeat;
+    background-size: cover;
+    color: #fff;
+    margin-top: 30px;
+}
+
+@media(max-width:767px) {
+    .awards {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
+
+@media(min-width:768px) {
+    .awards {
+        height: 420px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-position: 50% 50%;
+    }
+}
+
+.awards .container {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+}
+
+@media(min-width:768px) {
+    .awards .container {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.awards__title {
+    line-height: 1.2;
+}
+
+@media(min-width:768px) {
+    .awards__title {
+        font-size: 42px;
+        width: 260px;
+    }
+}
+
+@media(max-width:767px) {
+    .awards__title {
+        margin-bottom: 40px;
+    }
+}
+
+.awards__title span {
+    font-size: 40px;
+    color: #f9b208;
+}
+
+@media(max-width:767px) {
+    [dir=ltr]
+   .awards__title span {
+        margin-right: 15px;
+    }
+
+    [dir=rtl]
+   .awards__title span {
+        margin-left: 15px;
+    }
+}
+
+@media(min-width:768px) {
+    .awards__title span {
+        font-size: 140px;
+        display: block;
+    }
+}
+
+.awards__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    position: relative
+}
+
+@media(max-width:767px) {
+    [dir=ltr]
+                .awards__list {
+        margin-right: -20px;
+    }
+
+    [dir=rtl]
+                .awards__list {
+        margin-left: -20px;
+    }
+
+    .awards__list {
+        overflow-x: scroll;
+        white-space: nowrap;
+        font-size: 0;
+    }
+}
+
+@media(min-width:768px) {
+    [dir=ltr]
+                 .awards__list {
+        margin-left: 60px;
+    }
+
+    [dir=rtl]
+                 .awards__list {
+        margin-right: 60px;
+    }
+
+    .awards__list {
+        display: flex;
+        flex-grow: 1;
+        justify-content: space-between;
+    }
+
+    .awards__list:before {
+        content: "";
+        height: 1px;
+        background: #cecfd0;
+        position: absolute;
+        top: 42px;
+        right: 42px;
+        bottom: 42px;
+        left: 42px;
+        top: 50%;
+    }
+}
+
+.awards__list li {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media(max-width:767px) {
+    .awards__list li {
+        display: inline-block;
+        width: 170px;
+        min-height: 180px;
+        vertical-align: top;
+    }
+}
+
+.awards__list li span {
+    display: block;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+[dir=ltr]
+                     .awards__list li:after,[dir=ltr]
+                     .awards__list li:before {
+    right: 50%;
+}
+
+[dir=rtl]
+                     .awards__list li:after,[dir=rtl] .awards__list li:before {
+    left: 50%;
+}
+
+.awards__list li:after,.awards__list li:before {
+    content: "";
+    border-radius: 50%;
+    background: #f9b208;
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    transition: all .5s ease;
+}
+
+[dir=ltr]
+                       .awards__list li:after,[dir=ltr]
+                       .awards__list li:before {
+    transform: translate(50%,-50%);
+}
+
+@media(max-width:767px) {
+    .awards__list li:after,.awards__list li:before {
+        transform: translate(-50%,calc(-50% - 8px));
+    }
+
+    [dir=ltr] .awards__list li:after,[dir=ltr] .awards__list li:before {
+        transform: translate(50%,calc(-50% - 8px));
+    }
+}
+
+.awards__list li:before {
+    z-index: 1;
+}
+
+.awards__list li:after {
+    background: 0 0;
+    width: 24px;
+    height: 24px;
+}
+
+.awards__list li p {
+    height: 50%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.awards__list li p:first-child {
+    justify-content: flex-end;
+    padding-bottom: 15px;
+    font-size: 12px;
+    transform-origin: 50% 100%;
+    transition: all .5s ease
+}
+
+@media(min-width:768px) {
+    .awards__list li p:first-child {
+        width: 80px
+    }
+}
+
+@media(max-width:767px) {
+    .awards__list li p:first-child {
+        border-bottom: 1px solid #fff
+    }
+}
+
+.awards__list li p:first-child:after {
+    content: "";
+    width: 25px;
+    height: 32px;
+    background: url('https://www.alahlyegypt.com/assets/styles/images/award.png') 50% 50% no-repeat;
+    background-size: 25px 32px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px
+}
+
+.awards__list li p:last-child {
+    padding-top: 15px;
+    font-size: 14px;
+    font-weight: 300
+}
+
+@media(min-width:768px) {
+    .awards__list li:hover:before {
+        background: #ff1a1a
+    }
+
+    .awards__list li:hover:after {
+        background: #fff;
+        border: 1px solid #ff1a1a;
+        box-shadow: 0 0 1px 5px rgba(255,26,26,.67)
+    }
+
+    .awards__list li:hover p:first-child {
+        transform: scale(1.5)
+    }
+}
+
+p.information {
+    line-height: 1.7;
+    font-family: 'Cairo', sans-serif;
+    direction: rtl;
+    font-size: 19px;
+    margin: 40px;
+}

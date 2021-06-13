@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="javascript.js" type="text/javascript">
+</script>
+    <link href="css.css?ver=1.1.0" rel="stylesheet" type="text/css">
+    <link href="index.css?ver=1.1.0" rel="stylesheet" type="text/css">
+
+    <title></title>
+</head>
+
+<body>
+    <div class="page-header" filter-color="green">
+        <div class="page-header-image" data-parallax="true" style="background-image: url('background.jpg')"></div>
+
+        <ul class="navbar-nav">
+            <li><a href="index2.html">About</a></li>
+
+            <li><a href="index3.html">Last news</a></li>
+
+            <li><a href="index4.html">figures</a></li>
+
+            <li><a href="index5.html">Table</a></li>
+
+            <li><a href="index.html">Main</a></li>
+
+            <li style="float:left;" class="dropdown">
+                <a class="dropbtn">social media</a>
+
+                <div class="dropdown-content">
+                    <a href="https://www.facebook.com/Officialahlysc">facebook</a> <a href="https://twitter.com/AlAhly">twitter</a> <a href="https://www.instagram.com/alahlytv/">instagram</a>
+                </div>
+            </li>
+        </ul>
+
+        <div class="container">
+            <div class="content-center">
+                <div class="cc-profile-image">
+                    <a href="#"><img src="Al-ahly.jpg" alt="Image"></a>
+                </div>
+
+                <div class="h2title">
+                    Al-Ahly Club
+                </div>
+
+                <p class="category text-white">welcome to our fan page to support our lovely Team Al-Ahly</p>
+            </div>
+        </div>
+    </div><br>
+
+    <h1>please,fill this form please.</h1>
+
+    <div class="form">
+        <form id="myform" onsubmit="validation(event)" autocomplete="on">
+            <div class="inputBox">
+                <input name="fname" type="text" placeholder="First name" id="user" class="control" required=""> <input name="lname" type="text" placeholder="last name" id="user2" class="control" required=""> <input name="email" type="email" id="email" class="control" placeholder="email" required=""> <input name="number" type="tel" id="mobile" class="control" placeholder="mobile phone number" pattern="[0-9]{11}" required=""> <input name="adress" type="text" id="adress" class="adress" placeholder="adress" required=""> <input name="password" type="password" id="pass" class="control" placeholder="password" required=""> <input name="passward" type="password" placeholder="confirm passward" id="conpass" class="control">
+            </div>
+            <textarea placeholder="Your order.." name="address" id="" cols="30" rows="10" required="">
+</textarea> <select id="gender" name="gender">
+                <option value="male">
+                    male
+                </option>
+
+                <option value="female">
+                    female
+                </option>
+            </select><br>
+            <br>
+            <input type="submit" value="transfer to About page" class="btn" id="submit">
+        </form>
+    </div>
+</body>
+</html>
