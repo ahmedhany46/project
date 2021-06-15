@@ -68,6 +68,7 @@
     .lastnews >div {
         width: calc(50% - 30px);
     }
+    .div3 p{font-size:20px;}
 }
 
 @media screen and (max-width:660px) {
