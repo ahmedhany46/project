@@ -71,7 +71,7 @@
     .div3 p{font-size:20px;}
 }
 
-@media screen and (max-width:660px) {
+@media screen and (max-width:682px) {
  
     .lastnews >div {
         width: calc(100% - 100px);
