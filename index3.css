@@ -54,10 +54,11 @@
     height: 100%;
 }
 
-@media screen and (max-width:1170px) {
+@media screen and (max-width:1120px) {
     .lastnews {
         width: 920px;
     }
+    .div3 p{font-size:30px;} 
 }
 
 @media screen and (max-width:920px) {
