@@ -58,7 +58,7 @@
     .lastnews {
         width: 920px;
     }
-    .div3 p{font-size:30px;} 
+    .div3 p{font-size:27px;} 
 }
 
 @media screen and (max-width:920px) {
@@ -69,7 +69,7 @@
     .lastnews >div {
         width: calc(50% - 30px);
     }
-    .div3 p{font-size:20px;}
+    .div3 p{font-size:30px;}
 }
 
 @media screen and (max-width:682px) {
@@ -77,7 +77,7 @@
     .lastnews >div {
         width: calc(100% - 100px);
     }
-    .div3 p{font-size:17px;}
+    .div3 p{font-size:23px;}
 }
 
 
