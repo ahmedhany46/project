@@ -54,7 +54,7 @@
     height: 100%;
 }
 
-@media screen and (max-width:1140px) {
+@media screen and (max-width:1150px) {
     .lastnews {
         width: 920px;
     }
