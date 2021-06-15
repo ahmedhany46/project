@@ -75,6 +75,7 @@
     .lastnews >div {
         width: calc(100% - 100px);
     }
+    .div3 p{font-size:13px;}
 }
 
 
